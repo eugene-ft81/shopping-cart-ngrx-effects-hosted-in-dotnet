@@ -1,0 +1,26 @@
+<h3>Cart</h3>
+<div class="cart-item" *ngFor="let item of items | async">
+  <span>Name: {{ item.product.name }}</span>
+  <span>Price: {{ item.product.price | currency }}</span>
+  <!-- <span>Quantity: {{ item.quantity }}</span> -->
+  <span>
+    <button type="button" (click)="delete(item.product.id)">
+      Delete
+  </button>    
+  </span>
+</div>
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+      <label for="address">
+        Address
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+    <button class="button" type="submit">Purchase</button>
+</form>

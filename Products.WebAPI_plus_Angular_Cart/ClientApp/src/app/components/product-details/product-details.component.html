@@ -1,0 +1,12 @@
+<h2>Product Details</h2>
+<div *ngIf="(product | async) as product">
+  <h3>Name: {{ product.name }}</h3>
+  <h4>Price: {{ product.price | currency }}</h4>
+  <p>Description: {{ product.description }}</p>
+  <button type="button" (click)="add(product)">
+    Add to Cart
+  </button>
+  <button type="button" [routerLink]="['']">
+      Back to List
+  </button>  
+</div>

@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "/assets/images/p1.jpg",
+            "name": "P1",
+            "price": 1000,
+            "description": "P 1"
+        },
+        {
+            "id": 2,
+            "image": "/assets/images/p2.jpg",
+            "name": "P2",
+            "price": 100000,
+            "description": "P 2"
+        },
+        {
+            "id": 3,
+            "image": "/assets/images/p3.jpg",
+            "name": "P3",
+            "price": 1000000,
+            "description": "P 3"
+        }
+    ]
+}
